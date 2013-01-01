@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="SilverlightXboxMenu.UserButtons"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+    
+    <UserControl.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground"
+                    Value="{StaticResource ForegroundSelectedTextBrush}" />
+            <Setter Property="FontFamily"
+                    Value="/SilverlightXboxMenu;component/Fonts/Fonts.zip#Segoe UI" />
+            <Setter Property="FontSize"
+                    Value="16" />
+            <Setter Property="Margin"
+                    Value="5,0,0,0" />
+        </Style>
+        <Style TargetType="StackPanel">
+            <Setter Property="HorizontalAlignment"
+                    Value="Left" />
+            <Setter Property="Orientation"
+                    Value="Horizontal" />
+            <Setter Property="Margin"
+                    Value="60,0,0,0" />
+        </Style>
+    </UserControl.Resources>
+    
+    <StackPanel x:Name="ButtonStackPanel">
+        <Image x:Name="AButtonImage"
+                Source="Images/A.png"
+                Style="{StaticResource ImageStyle}" />
+        <TextBlock x:Name="SelectTextBlock"
+                    Margin="5,1,0,-1"
+                    Text="Select" />
+        <Image x:Name="BButtonImage"
+                Source="Images/B.png"
+                Style="{StaticResource ImageStyle}" />
+        <TextBlock x:Name="DetailsTextBlock" Text="Details" />
+        <Image x:Name="XButtonImage"
+                Source="Images/X.png"
+                Style="{StaticResource ImageStyle}" />
+        <TextBlock x:Name="LaunchTextBlock" Text="Launch" />
+    </StackPanel>
+
+</UserControl>
